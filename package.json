@@ -1,0 +1,21 @@
+{
+  "name": "@rickselby/jqueryui-datepicker-bootstrap-sass",
+  "version": "1.0.0",
+  "description": "Bootstrap theme for jQuery UI datepicker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickselby/jqueryui-datepicker-bootstrap-sass.git"
+  },
+  "keywords": [
+    "datepicker"
+  ],
+  "author": "Rick Selby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickselby/jqueryui-datepicker-bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/rickselby/jqueryui-datepicker-bootstrap-sass#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

@@ -1,0 +1,145 @@
+
+.ui-datepicker {
+
+  @extend .card;
+  padding: 0;
+
+  /** Header **/
+
+  .ui-datepicker-header {
+    @extend .card-header;
+  }
+
+  .ui-datepicker-next,
+  .ui-datepicker-prev {
+    cursor: pointer;
+    top: unset;
+  }
+
+  .ui-datepicker-prev {
+    left: 1px;
+  }
+
+  .ui-datepicker-next {
+    right: -3px;
+  }
+
+  .ui-datepicker-next-hover,
+  .ui-datepicker-prev-hover {
+    color: $gray-500 !important;
+  }
+
+  .ui-icon {
+    @extend .pt-1;
+    visibility: hidden;
+    text-indent: 0;
+    top: -25% !important;
+    font-size: 200%;
+    line-height: 1.5;
+
+    &:before {
+      visibility: visible;
+    }
+
+    &.ui-icon-circle-triangle-w {
+      &:before {
+        content: '\2039';
+      }
+    }
+
+    &.ui-icon-circle-triangle-e {
+      &:before {
+        content: '\203A';
+      }
+    }
+  }
+
+  .ui-datepicker-title {
+    @extend .form-inline;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .ui-datepicker-month,
+  .ui-datepicker-year {
+    @extend .form-control;
+    @extend .form-control-sm;
+    width: 45% !important;
+    font-size: 1em;
+    height: $input-height-sm;
+  }
+
+  /** Calendar Table **/
+
+  table {
+    border-collapse: separate;
+
+    th {
+      color: $gray-700;
+    }
+
+    td {
+
+      &.ui-datepicker-unselectable span {
+        color: $gray-600;
+        background-color: transparent;
+      }
+
+      span, a, &.ui-datepicker-week-col {
+        text-align: center;
+      }
+
+      a {
+        background-color: $card-cap-bg;
+        color: $body-color;
+        text-decoration: none;
+        border-radius: $border-radius-sm;
+
+        &:hover {
+          background-color: $link-hover-color;
+          color: #fff;
+        }
+        &:active {
+          background-color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  .ui-datepicker-current-day a {
+    background-color: $gray-800;
+    color: $white;
+  }
+
+  .ui-datepicker-today a {
+    border: $border-width solid $gray-600;
+    // Reduce padding to accommodate border
+    padding: calc(.2em - 1px);
+  }
+
+  .ui-datepicker-other-month a {
+    background-color: #fcfcfc;
+    color: $gray-600;
+  }
+
+  .ui-datepicker-week-col {
+    text-align: right;
+    padding-right: ($line-height-base / 5);
+    color: $gray-700;
+  }
+
+  /** Button Pane **/
+
+  .ui-datepicker-buttonpane {
+    @extend .card-body;
+    padding: 0;
+
+    button {
+      @extend .btn, .btn-sm;
+    }
+
+    .ui-priority-primary {
+      @extend .btn-primary;
+    }
+  }
+}
