@@ -1,6 +1,6 @@
 {
   "name": "@rickselby/jqueryui-datepicker-bootstrap-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap theme for jQuery UI datepicker",
   "repository": {
     "type": "git",
